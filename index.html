@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Binární kvíz</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+</head>
+<body id="body">
+    <div id="main_okno">
+      <div id="header">
+        <h1 class="header">Binární kvíz</h1>
+        <p id="text_header" class="header">Vyberte početní operaci:</p>
+      </div>
+        <div id="vyber_okno">
+          <input type="button" id="btn_scitani" class="buttons" value="Sčítání" />
+          <input type="button" id="btn_odcitani" class="buttons" value="Odčítání" />
+          <input type="button" id="btn_deleni" class="buttons" value="Dělení" />
+          <input type="button" id="btn_nasobeni" class="buttons" value="Násobení" />
+        </div>
+        <div id="detaily">
+            <h1 class="details">Správně: <span class="details" id="spravne">-</span></h1>
+            <h1 class="details">Špatně: <span class="details" id="spatne">-</span></h1>
+            <h1 class="details">Čas: <span class="details" id="cas">0s</span></h1>
+        </div>
+        <div id="priklady">
+            <table id="zobrazeni_prikladu">
+                <tr>
+                  <td id="priklad1" class="priklady"></td>
+                </tr>
+                <tr>
+                  <td id="priklad2" class="priklady"></td>
+                </tr>
+                <tr>
+                  <td id="vysledek" class="priklady">&nbsp;</td>
+                </tr>
+
+              </table>
+        </div>
+        <div id="buttony01" class="btn">
+          <input type="button" id="moznost1" class="buttony" value="1" />
+          <input type="button" id="moznost2" class="buttony" value="0" />
+        </div>
+        <button type="button" id="zpet">Zpět</button>
+        <button type="button" id="downloadCsv">Data</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/json2csv"></script>
+    <script src='script.js'></script>
+</body>
+</html>               
+
