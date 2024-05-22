@@ -1,5 +1,5 @@
-CREATE DATABASE IF NOT EXISTS myappdatabase;
-USE myappdatabase;
+CREATE DATABASE IF NOT EXISTS bmxl35l3amqxxanjhflp;
+USE bmxl35l3amqxxanjhflp;
 CREATE TABLE IF NOT EXISTS users(
     username varchar(20) PRIMARY KEY,
     password varchar(128) NOT NULL
