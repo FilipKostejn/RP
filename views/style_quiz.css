@@ -1,0 +1,230 @@
+* {
+    box-sizing: border-box;
+    font-size: 1.5vw;
+    padding: 0;
+    margin: 0;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+#body {
+    display: flex;
+    justify-content: center;
+}
+#main_okno {
+    display: grid;
+    height: 100%;
+    width: 100%;
+
+}
+
+
+
+/*----------------*/
+#detaily {
+    display: none; /*flex*/
+    justify-content: space-around;
+    padding-right: 10px;
+    padding-left: 0;
+    padding-bottom: auto;
+    padding-top: 2vh;
+}
+.details {
+    font-size: 3vw;
+}
+
+
+
+#zobrazeni_prikladu {
+    align-items: right;
+    width: 100%;
+    float: right;
+
+}
+
+.btn {
+    display: none;
+    justify-content: space-evenly;
+    margin-top: 5vh;
+}
+#moznost1 {
+    margin-left: auto;
+}
+#moznost2 {
+    margin-right: auto;
+}
+.buttons {
+    border-radius: 1.5vw;
+    background-color: #00d9ffc5;
+    min-width: 20vw;
+    font-size: 3vw;
+    padding: 0;
+    max-height: 16vh;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 2vh;
+}
+.buttony {
+    border-radius: 1.5vw;
+    background-color: #00d9ffc5;
+   /* min-width: 20vw;*/
+    width: 25vw;
+    font-size: 3vw;
+    padding: 0;
+    margin-right: 5vw;
+    max-height: 15vh;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 2vh;
+}
+#vyber_okno {
+    margin-top: 10vh;
+    height: 50%;
+    width: 50%;
+    display: grid;
+    justify-self: center;
+}
+#zpet {
+    width: 16vw;
+    height: 5vh;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #00d9ffc5;
+    border: none;
+    font-size: 2vw;
+    cursor: pointer;
+    display: none; /*block*/
+}
+#downloadCsv {
+    width: 16vw;
+    height: 5vh;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: #00d9ffc5;
+    border: none;
+    font-size: 2vw;
+    cursor: pointer;
+    display: none; /*block*/
+}
+#header {
+    padding: 1vh;
+    text-align: center;
+    background-color: #74efff;
+    position: relative;
+    height: 6vw;
+    border-bottom: 2px solid black;
+    width: 100%;
+}
+.header {
+    font-size: 4vw;
+}
+
+
+
+#uvodni {
+    font-size: 2vw;
+}
+#uvod {
+    margin-top: 1vh;
+    text-align: center;
+}
+
+
+#domu {
+    width: 16vw;
+    height: 5vh;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #00d9ffc5;
+    border: none;
+    font-size: 2vw;
+    cursor: pointer;
+    display: block; /*block*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------------------------*/
+.container {
+    margin-top: 2vh;
+    justify-content: center;
+    align-items: center ;
+    text-align: right;
+    width: 100%;
+    display: none; /*flex*/
+    align-self: center;
+    margin-top: 5vh;
+}
+
+
+.cis1, .cis2, .vys {
+    background-color: transparent;
+    width: 5vw;
+    text-align: center;
+    /*padding: 1rem 1rem;*/
+    margin: 0 0.5vw;
+    margin-bottom: 0.25vw;
+    margin-top: 0.25vw;
+    font-size: 3rem;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    border-radius: .5rem;
+    color: rgba(0, 0, 0, 0.5);
+    height: 15vh;
+}
+#empty1, #empty2, #empty3, #empty4 {
+    border: none;
+    color: #000000;
+}
+#div {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#solid {
+    border-top: 3px solid #000000;
+    margin-bottom: 0.5vw;
+}
+#next {
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5vh;
+    align-self: center;
+}
+
+#correct {
+    margin-right: auto;
+}
+#users {
+    margin-right: auto;
+    display: none;
+}
+
+
+
+
+/*@media only screen and (max-height: 1200px) and (max-width: 500px) {*/
+@media only screen and (orientation: portrait) {
+    .buttons {font-size: 7vw; margin-bottom: 5vh;}
+    .buttony {font-size: 5vw; margin-bottom: 5vh; width: 45vw;}
+    .priklady {font-size: 8vw;}
+    .header {font-size: 9vw;}
+    #header {height: 14vw;}
+    .details {font-size: 5vw;}
+    #zpet, #domu {font-size: 5vw; width: 30vw;}
+    #downloadCsv {font-size: 5vw; width: 30vw;}
+    a {font-size: 5vw;}
+    #uvodni {font-size: 5vw;}
+    .cis1, .cis2, .vys {width: 8vw; height: 8vh;}
+  }
+

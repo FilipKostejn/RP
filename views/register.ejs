@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrace</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Registrace</h1>
+    <!--Díky ejs je možné spustit JavaScriptový kód (ten musí být ve speciálních závorkách) a pomocí něj načíst zaslanou zprávu a tu poté zobrazit -->
+    <% if (messages.error) { %>
+        <%= messages.error %>
+    <% } %>
+    <form action="/register" method="post">
+        <input type="text" name="username" placeholder="Uživatelské jméno" required>
+        <br>
+        <input type="password" name="password" placeholder="Heslo" required>
+        <br>
+        <input type="submit" value="Registrovat">
+    </form>
+    <a href="./login">Přihlášení</a>
+</body>
+</html>

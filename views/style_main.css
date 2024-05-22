@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+    font-size: 1.5vw;
+    padding: 0;
+    margin: 0;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+#body {
+    display: flex;
+    justify-content: center;
+}
+
+#main_okno {
+    display: grid;
+    height: 100%;
+    width: 100%;
+}
+
+#result_button, #logout_button{
+    text-align: center;
+}
+
+.user_name{
+    margin-top: 1vw;
+    text-align: center;
+    font-weight: bold;
+    
+}
+
+.user_name span{
+    font-size: 2vw;
+}
+
+#header {
+    padding: 1vh;
+    text-align: center;
+    background-color: #74efff;
+    position: relative;
+    height: 6vw;
+    border-bottom: 2px solid black;
+    display: block;
+    justify-content: center;
+}
+.header {
+    font-size: 4vw;
+}
+/*----------------------------------------------------------*/
+#karty {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.karta {
+    border: 2px solid #74efff;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    width: 40%;
+}
+
+.karta h2 {
+    font-size: 2vw;
+    margin-bottom: 10px;
+}
+
+.karta p {
+    font-size: 1.5vw;
+    margin-bottom: 20px;
+}
+
+button {
+    font-size: 1.5vw;
+    padding: 10px 20px;
+    background-color: #74efff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 1vw;
+}
+
+.karta button:hover {
+    background-color: #4bb5d9;
+}
+
+
+
+
+
+
+/*@media only screen and (max-height: 1200px) and (max-width: 500px) {*/
+@media only screen and (orientation: portrait) {
+    .header {font-size: 9vw;}
+    #header {height: 14vw;}
+    #karty {
+        flex-direction: column;
+        align-items: center;
+    }
+    .karta p {
+        font-size: 3vw;
+    }
+    #navod {
+        font-size: 3vw;
+    }
+    .karta h2 {
+        font-size: 5vw;
+    }
+    .karta button {
+        font-size: 4vw;
+    }
+    .karta {
+        width: 80%;
+        margin-bottom: 5vh;
+    }
+    .user_name span{
+        font-size: 4vw;
+    }
+    .btn_data {
+        font-size: 4vw;
+    }
+}

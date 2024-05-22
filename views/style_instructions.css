@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+    font-size: 1.5vw;
+    padding: 0;
+    margin: 0;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+#body {
+    display: flex;
+    justify-content: center;
+}
+
+#main_okno {
+    display: grid;
+    height: 100%;
+    width: 100%;
+}
+
+#header {
+    padding: 1vh;
+    text-align: center;
+    background-color: #74efff;
+    position: relative;
+    height: 6vw;
+    border-bottom: 2px solid black;
+    display: block;
+    justify-content: center;
+}
+.header {
+    font-size: 4vw;
+}
+
+button {
+    background-color: #74efff;
+    margin-top: 2vh;
+    width: 15vw;
+    border-radius: 1vw;
+    border: none;
+    font-size: 2vw;
+    cursor: pointer;
+}
+
+#zpet {
+    width: 16vw;
+    height: 5vh;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #00d9ffc5;
+    border: none;
+    font-size: 2vw;
+    cursor: pointer;
+    display: block; /*block*/
+    border-radius: 0;
+}
+#text {
+    padding-top: 2vh;
+}
+h1 {
+    font-size: 2.5vw;
+    text-align: center;
+}
+p {
+    font-size: 1.5vw;
+    text-align: center;
+}
+
+/*@media only screen and (max-height: 1200px) and (max-width: 500px) {*/
+    @media only screen and (orientation: portrait) {
+        .header {font-size: 9vw;}
+        #header {height: 14vw;}
+        h1  {font-size: 6vw;}
+        p  {font-size: 4vw;}
+        button {font-size: 6vw; width: 32vw;}
+        #zpet {font-size: 5vw; width: 30vw;}
+    }

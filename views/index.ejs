@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Program pro výuku</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style_main.css'>
+</head>
+<body id="body">
+    <div id="main_okno">
+        <div id="header">
+            <h1 class="header">Programy pro výuku</h1>
+        </div>
+        <div class="user_name">
+            <span>Uživatel: </span>
+            <% if (locals.name) {%>
+                <span><%= name %></span>
+            <% } %> 
+        </div>
+        
+        <br>
+        <div id="karty">
+            <div class="karta">
+                <h2>Binární kvíz</h2>
+                <p>Program na procvičení početních operací v binární soustavě.</p>
+                <p>Můžete si vybrat sčítání, odčítání, násobení a nebo dělení.</p>
+                <p>Zadávat budete 1 a 0 pomocí tlačítek.</p>
+                <p><a id="navod" href="./quizinstructions">Návod na použití</a></p>
+                <a href="./quiz">
+                    <button>Přejít na stránku</button>
+                </a>
+            </div>
+            <div class="karta">
+                <h2>Převody číselných soustav.</h2>
+                <p>Program se zaměřuje na zkoušení převodů mezi číselnými soustavami.</p>
+                <p>Zadáte decimální číslo a budete mít možnost číslo převést do binární nebo hexadecimální soustavy.</p>
+                <p>Je zde možnost automatického převodu čísel.</p>
+                <p><a id="navod" href="./convertinstructions">Návod na použití</a></p>
+                <a href="./convert">
+                    <button>Přejít na stránku</button>
+                </a>
+            </div>
+        </div>
+        <div id="result_button">
+            <a href="./results">
+                <button type="button" class="btn_data">Výsledky</button>
+            </a>
+        </div>
+        <div id="logout_button">
+            <button type="button" class="btn_data" onclick="fetch('/logout', {method: 'DELETE'}).then((response) => {window.location.href=response.url;});">Odhlásit</button>
+        </div>
+        
+    </div>
+    
+</body>
+</html>

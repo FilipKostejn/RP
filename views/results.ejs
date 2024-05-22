@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="user_name">
+        <span>Uživatel: </span>
+        <% if (locals.name) {%>
+            <span><%= name %></span>
+        <% } %> 
+    </div>
+    <table id="data_table">
+        <tr>
+            <th>Priklad</th>
+            <th>Doba reseni</th>
+            <th>Vysledek uzivatele</th>
+            <th>Spravny vysledek</th>
+            <th>Pocet chybnych</th>
+            <th>Pocet spravnych</th>
+            <th>Typ</th>
+        </tr>
+        <% if (locals.data) {%>
+            <% for(let i = 0; i < data.length; i++) { %>
+            <tr>
+                <td><%= data[i].problem %></td>
+                <td><%= data[i].duration %></td>
+                <td><%= data[i].entered %></td>
+                <td><%= data[i].result %></td>
+                <td><%= data[i].wrongcount %></td>
+                <td><%= data[i].correctcount %></td>
+                <td><%= data[i].type === "BIN" ? "Binarni vypocty" : "Prevody" %></td>
+            </tr>
+            <% } %>
+        <% } %>
+    </table>
+    <button type="button" class="btn_data" onclick="downloadCsv()">Export Dat</button>
+    <a href="./">
+        <button type="button" class="btn_data" id="domu">Domů</button>
+    </a>
+    <script src="results.js"></script>
+</body>
+</html>

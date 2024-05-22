@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Binární kvíz</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style_quiz.css'>
+</head>
+<body id="body">
+    <div id="main_okno">
+      <div id="header">
+        <h1 class="header">Binární kvíz</h1>
+      </div>
+      <div id="uvod">
+        <h1 id="uvodni">Vyberte požadovanou početní operaci na procvičení:</h1>
+      </div>
+      <a href="./">
+        <button type="button" id="domu">Domů</button>
+      </a>
+        <div id="vyber_okno">
+          <input type="button" id="btn_scitani" class="buttons" value="Sčítání" />
+          <input type="button" id="btn_odcitani" class="buttons" value="Odčítání" />
+          <input type="button" id="btn_deleni" class="buttons" value="Dělení" />
+          <input type="button" id="btn_nasobeni" class="buttons" value="Násobení" />
+        </div>
+        <div id="detaily">
+            <h1 class="details">Správně: <span class="details" id="spravne">-</span></h1>
+            <h1 class="details">Špatně: <span class="details" id="spatne">-</span></h1>
+            <h1 class="details">Čas: <span class="details" id="cas">0s</span></h1>
+        </div>
+        <div id="div">
+        <div class="container" id="priklady">
+            <table id="zobrazeni_prikladu">
+                <tr class="cisla1">
+                  <td><input type="number" class="cis1" id="empty1" maxlength="1" required disabled></td>
+                  <td><input type="number" class="cis1" id="empty2" maxlength="1" required disabled></td>
+                  <td><input type="number" class="cis1" maxlength="1" required disabled></td>
+                  <td><input type="number" class="cis1" maxlength="1" required disabled></td>
+                  <td><input type="number" class="cis1" maxlength="1" required disabled></td>
+                  <td><input type="number" class="cis1" maxlength="1" required disabled></td>
+                  <td><input type="number" class="cis1" maxlength="1" required disabled></td>
+                  <td><input type="number" class="cis1" maxlength="1" required disabled></td>
+                  <td><input type="number" class="cis1" maxlength="1" required disabled></td>
+                  <td><input type="number" class="cis1" maxlength="1" required disabled></td>
+                </tr>
+                <tr class="cisla2">
+                  <td><input type="number" class="cis2" id="empty3" maxlength="1" required disabled></td>
+                  <td><input type="text" class="cis2" id="empty4" maxlength="1" required disabled></td>
+                  <td><input type="number" class="cis2" maxlength="1" required disabled></td>
+                  <td><input type="number" class="cis2" maxlength="1" required disabled></td>
+                  <td><input type="number" class="cis2" maxlength="1" required disabled></td>
+                  <td><input type="number" class="cis2" maxlength="1" required disabled></td>
+                  <td><input type="number" class="cis2" maxlength="1" required disabled></td>
+                  <td><input type="number" class="cis2" maxlength="1" required disabled></td>
+                  <td><input type="number" class="cis2" maxlength="1" required disabled></td>
+                  <td><input type="number" class="cis2" maxlength="1" required disabled></td>
+                </tr>
+                <tr class="line">
+                  <td colspan="10" id="solid"></td>
+                </tr>
+                <tr class="vysledek">
+                  <td><input type="number" class="vys" maxlength="1" required disabled></td>
+                  <td><input type="number" class="vys" maxlength="1" required disabled></td>
+                  <td><input type="number" class="vys" maxlength="1" required disabled></td>
+                  <td><input type="number" class="vys" maxlength="1" required disabled></td>
+                  <td><input type="number" class="vys" maxlength="1" required disabled></td>
+                  <td><input type="number" class="vys" maxlength="1" required disabled></td>
+                  <td><input type="number" class="vys" maxlength="1" required disabled></td>
+                  <td><input type="number" class="vys" maxlength="1" required disabled></td>
+                  <td><input type="number" class="vys" maxlength="1" required disabled></td>
+                  <td><input type="number" class="vys" maxlength="1" required disabled></td>
+                </tr>
+              </table>
+        </div>
+        </div>
+        <div id="buttony01" class="btn">
+          <input type="button" id="moznost1" class="buttony" value="1" />
+          <input type="button" id="moznost2" class="buttony" value="0" />
+        </div>
+        <div id="next">
+          <input type="button" id="next_btn" class="buttony" value="Další příklad" />
+          <input type="button" id="correct" class="buttony" value="Správná odpověď" />
+          <input type="button" id="users" class="buttony" value="Vaše odpověď" />
+        </div>
+        <button type="button" id="zpet">Zpět</button>
+    </div>
+    <script src='script_quiz.js'></script>
+</body>
+</html>               
+
